@@ -26,7 +26,6 @@
         }
     }
 
-
     main {
         max-width: 800px;
         margin: 0 auto;
@@ -113,5 +112,50 @@
         .question.list {
             margin-top: 32px
         }
+    }
+}
+
+@media (max-width: 768px) {
+    #page-room header #content,
+    #page-room main #room-title,
+    #page-room header #content > div,
+    #page-room main form #form-footer,
+    .question footer > div,
+    .room-code,
+    .question footer,
+    .question footer button.like-button.liked{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #page-room main {
+        padding: 15px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .room-code {
+        display: grid;
+    }
+    .room-code span{
+        display: none;
+    }
+    #page-room main {
+        padding: 10px;
+    }
+
+    #page-room main #room-title h1 {
+        font-size: 16px
+    }
+    #page-room main #room-title span{
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 375px) {
+    #page-room header #content button {
+        font-size: 12px;
+        width: 45px
     }
 }

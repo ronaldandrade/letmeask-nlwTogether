@@ -53,14 +53,14 @@ export function Home() {
       <aside>
         <img src={illustrationImg} alt="Ilustração" />
         <strong>Crie salas de Q&amp;A ao-vivo</strong>
-        <p>Tire as duvidas da sua audiencia em tempo real</p>
+        <p>Tire as duvidas da sua audiência em tempo real</p>
       </aside>
       <main>
         <div className="main-content">
           <img src={logoImg} alt="Letmeask" />
           <button onClick={handleCreateRoom} className="create-room">
             <img src={googleIconImg} alt="Logo da Google" />
-            Crie sua sala com sua conta Google
+            Crie uma sala com sua conta Google
           </button>
           <div className="separator">ou entre em uma sala</div>
           <form onSubmit={handleJoinRoom}>

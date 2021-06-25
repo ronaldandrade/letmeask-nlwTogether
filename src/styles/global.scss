@@ -6,10 +6,28 @@
 }
 
 body {
-    background: #f8f8f8;
+    background: #f8f8f8a4;
     color: #29292e;
 }
 
 body, input, button, textarea {
     font: 400 16px 'Roboto', sans-serif;
+}
+
+@media (max-width: 768px) {
+    *{
+        flex-direction: column;;
+    }
+
+}
+@media( max-width: 320px) {
+    html{
+        font-size: 90%;
+    }
+    #page-auth aside {
+        flex: 1;
+    }
+    #page-auth .create-room {
+        padding: 20px
+    }
 }
